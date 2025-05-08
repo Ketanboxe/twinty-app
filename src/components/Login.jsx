@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 
 const Login = () => {
   const SITE_KEY = "6LfPuDArAAAAAIdC5xuRa0wslvRf3FFpRLNlhwoF";
+  const Navigate = useNavigate();
 
   const [formData, setFormData] = useState({
     email: "",
