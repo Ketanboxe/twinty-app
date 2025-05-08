@@ -1,16 +1,18 @@
-import Login from "./components/Login"
-import { BrowserRouter, Route, Router } from "react-router"
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Dashboard from "./components/Dashboard";
+import Login from "./components/Login";
 
 function App() {
-
   return (
     <BrowserRouter>
-      <div className="h-screen bg-gray-500 text-4xl text-center">
-        <Route path="/" element={<Login />} />
-        <Route path="/dashboard" element={<Dashboard />} />
+      <div>
+        <Routes>
+          <Route path="/" element={<Login />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+        </Routes>
       </div>
     </BrowserRouter>
-  )
+  );
 }
 
-export default App
+export default App;
