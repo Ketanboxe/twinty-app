@@ -55,7 +55,8 @@ const Login = () => {
     }
 
     if (isValid) {
-      alert("Login Successful");
+      // alert("Login Successful");
+      Navigate("/dashboard");
     }
   };
   return (
