@@ -3,7 +3,7 @@ import ReCAPTCHA from "react-google-recaptcha";
 import { useNavigate } from "react-router-dom";
 
 const Login = () => {
-  const SITE_KEY = "6LfPuDArAAAAAIdC5xuRa0wslvRf3FFpRLNlhwoF";
+  const SITE_KEY = "6LfrLjMrAAAAAC_x4UHxqCOHwyCDxJM9k6Upz0W9"
   const Navigate = useNavigate();
 
   const [formData, setFormData] = useState({
